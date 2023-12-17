@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(23.55deg, #080D0D 60%, #0d222d 100%);
+ 
+  
+}
+
+.body-bg {
+  background: linear-gradient(23.55deg, #080D0D 60%, #0d222d 100%);
+ 
+  
+}
+.bg-main {
+  background: linear-gradient(23.55deg, #080D0D 60%, #0d222d 100%);
+}
+
+
+
+
+.border-col {
+  border-color: #5B5B5B;
+}
+/* HomePage.module.css */
+.ellipse {
+  border-radius: 700px;
+  border: 100px solid rgba(108, 225, 237, 0.10);
+  position: absolute;
+  width: 600px;
+  height: 800px;
+  flex-shrink: 0;
+  bottom: -600px;
+  left: -20px;
+  transform: translateX(-50%);
+  clip-path: ellipse(50% 100% at 100% 0%);
+
+
+}
