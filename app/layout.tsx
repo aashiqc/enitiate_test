@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import ToastProvider from "@/providers/ToastProvider";
-import { AuthContextProvider } from "@/context/AuthContext";
+
 
 
 
@@ -23,11 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-      <AuthContextProvider>
+   
         <ToastProvider>
           {children}
         </ToastProvider>
-        </AuthContextProvider>
+  
       </body>
     </html>
   );

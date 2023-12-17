@@ -12,7 +12,7 @@ import { MdEmail, MdPassword } from "react-icons/md";
 import { IoMdPerson } from "react-icons/io";
 import { useRouter } from "next/navigation"; // Fixing import
 import toast from "react-hot-toast";
-import signUp from "@/firebase/auth/signup";
+import signUp from "@/firebase/auth/signUp";
 import Link from "next/link";
 
 const Page = () => {

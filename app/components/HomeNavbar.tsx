@@ -7,12 +7,12 @@ import Link from 'next/link'
 import Button from './Button'
 import { IoMenu } from "react-icons/io5";
 import { useRouter } from 'next/navigation'
-import { UserAuth } from '@/context/AuthContext'
+
 
 const HomeNavbar = () => {
   const [scrolled, setScrolled] = React.useState(false);
   const router = useRouter()
-  const user = UserAuth()
+
 
   const handleClick = () => {
     router.push('/login')
@@ -77,11 +77,9 @@ const HomeNavbar = () => {
             ))}
            </ul>
         <div className='flex w-24 '>
-          { user ? (
+        
             <Button type='button' outline label='Signin' onClick={handleClick}/>
-          ): (
-            <Button type='button' outline label='Logout' onClick={handleClick}/>
-          )}
+        
         </div>
        
         </div>
