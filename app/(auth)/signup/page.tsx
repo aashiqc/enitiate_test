@@ -15,6 +15,10 @@ import toast from "react-hot-toast";
 import signUp from "@/firebase/auth/signUp";
 import Link from "next/link";
 
+/* The code is defining a functional component called `Page`. Inside the component, it is using the
+`React.useState` hook to define several state variables: `username`, `termsChecked`, `email`,
+`password`, and `isLoading`. */
+
 const Page = () => {
   const [username, setUsername] = React.useState("");
   const [termsCkecked, setTermsChecked] = React.useState(false)

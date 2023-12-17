@@ -1,3 +1,8 @@
+/**
+ * This is a TypeScript React component for a login page with form validation and authentication
+ * functionality.
+ * @returns The Page component is being returned.
+ */
 
 "use client";
 
@@ -21,6 +26,11 @@ const Page = () => {
   const [password, setPassword] = React.useState("");
   const router = useRouter();
 
+  /**
+   * The login function attempts to sign in a user with an email and password, displaying appropriate
+   * error messages and redirecting to the home page upon successful login.
+   * @returns The function `login` returns nothing (undefined).
+   */
   const login = async () => {
     try {
       const { result, error } = await signIn(email, password);
@@ -38,6 +48,7 @@ const Page = () => {
     }
   };
 
+  /* The `return` statement is returning the JSX code that represents the login page component. */
   return (
     <AuthLayout>
     <section className="w-[100vw] h-[100vh] overflow-hidden fixed  body-bg">
